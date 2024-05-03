@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Thumb</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="preview">
+            <a href=""><i class="fa-solid fa-camera"></i>&nbsp; Gallery &nbsp&nbsp<a>
+            
+            <a href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i>&nbsp; Location<a><br>
+        </div>
+        <div class="header">
+            <img class="logo" src="../images/logo.png"><br><br>         
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="">IN SEASON</a></li>
+                <li><a href="">OFF SEASON</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="contacts.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="../images/garden.jpg">
+        </div>
+        <div class="main">
+            
+            <div class="content">
+                <h1>Contact Us</h1>
+                <h2>Contact Form</h2>
+                <p>Please use this to send us your questions and inquiry.</p>
+                <form name="contactForm" method="" action="">
+                    <label>Name:</label><br>
+                    <input type="text" id="txtName" name="txtName" placeholder="Enter Your Name" required> </input><br><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="txtEmail" id="txtEmail" required placeholder="Enter Your Email"><br><br>
+
+                    <label>Contact Number:</label><br>
+                    <input type="tel" name="txtCNumber" id="txtCNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"><br><br>
+
+                    <label>Age:</label><br>
+                    <input type="numb" name="txtAge" id="txtAge"><br><br>
+
+                    <label>Birth Date:</label><br>
+                    <input type="date" name="txtBday" id="txtBday"><br><br>
+
+                    <label>Sex:</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Male</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Female</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Other</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Prefer Not to Say</label><br><br>
+
+                    <label>Experience in Gardening:</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Beginner</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Amateur</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Advance</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Proficient</label><br>
+                    <input type="radio" name="rdSex" id="rdSex"><label>Expert</label><br><br>
+
+                    <label>Type of Problem</label><br>
+                    
+                    <input type="checkbox" name="chkPl" id="chkPl"><label>Plant</label><br>
+                    <input type="checkbox" name="chkSs" id="chkSs"><label>Season</label><br>
+                    <input type="checkbox" name="chkFt" id="chkFt"><label>Fertilizer</label><br>
+                    <input type="checkbox" name="chkPc" id="chkPc"><label>Pest Control</label><br><br>
+
+                    <label>Describe the issue</label>
+                    <input type="text" name="txtDescribe" required></input><br><br>
+
+
+                    <label>Upload any picture of the issue(if available):</label>
+                    <input type="file" id="myFile" name="filename"><br><br>
+
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">CLEAR</button><br>
+
+                </form>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Gardening Website. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.toLocaleDateString('en-US', { month: 'short' });
+        var dayOfWeek = currentDate.toLocaleDateString('en-US', { weekday: 'short' });
+
+        document.getElementById('date').textContent = day;
+        document.getElementById('month').textContent = month;
+        document.getElementById('weekday').textContent = dayOfWeek;
+    </script>
+
+</body>
+</html>

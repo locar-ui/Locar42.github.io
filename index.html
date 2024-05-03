@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Thumb</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="preview">
+            <a href=""><i class="fa-solid fa-camera"></i>&nbsp; Gallery &nbsp&nbsp<a>
+            
+            <a href="https://www.google.com/maps"><i class="fa-solid fa-location-dot"></i>&nbsp; Location<a><br>
+        </div>
+        <div class="header">
+            <img class="logo" src="images/logo.png"><br><br>         
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">IN SEASON</a></li>
+                <li><a href="">OFF SEASON</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="webpages/contacts.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="images/garden.jpg">
+            <div class="banner-content">
+                <div class="big-number" id="date"></div>
+                <div class="date-container">
+                    <div class="small-text" id="month"></div>
+                    <div class="small-lighter" id="weekday"></div>
+                </div>
+
+                <ul>
+                    <li><a href="#about">About Gardening</a></li>
+                    <li><a href="#why">Why?</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="introduction">
+                <h1>Cultivating Your Garden of Knowledge and <br> Blossoming Dreams</h1>
+                <p>Explore a verdant world where every seed holds the promise of lush growth and vibrant beauty. From nurturing novice sprouts to cultivating seasoned blooms and eventually your own green paradise.</p>
+            </div>
+            <div class="content">
+                <h1 id="about">What is Gardening About</h1>
+                <p>Gardening is more than just a hobby; it's a therapeutic and rewarding experience. It allows us to reconnect with nature, reduce stress, and enjoy the fruits of our labor. From vibrant blooms to fresh, homegrown produce, gardening offers endless possibilities for creativity and self-expression.</p>
+                <h1 id="why">Why Gardening Matters</h1>
+                <p>In today's fast-paced world, gardening provides a much-needed escape from the hustle and bustle of everyday life. It's a chance to slow down, get your hands dirty, and immerse yourself in the beauty of the natural world. Whether you have a sprawling backyard or just a few pots on a balcony, gardening offers a sense of accomplishment and fulfillment that is truly unmatched.</p>
+                <h1 id="mission">Our Mission</h1>
+                <p>At GreenThumb, our mission is to inspire and empower people to discover the joy of gardening. Through informative articles, practical tips, and engaging resources, we aim to demystify the art of gardening and help individuals of all skill levels cultivate thriving gardens that bring them happiness and fulfillment.</p>
+            </div>
+            <div class="right-side-bar">
+                <h2>Featured Plants</h2>
+                <ul>
+                    <li><img src="images/plant1.jpg" alt="Featured Plant 1"></li>
+                    <li><img src="images/plant2.jpg" alt="Featured Plant 2"></li>
+                    <li><img src="images/plant3.jpg" alt="Featured Plant 3"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Gardening Website. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var currentDate = new Date();
+        var day = currentDate.getDate();
+        var month = currentDate.toLocaleDateString('en-US', { month: 'short' });
+        var dayOfWeek = currentDate.toLocaleDateString('en-US', { weekday: 'short' });
+
+        document.getElementById('date').textContent = day;
+        document.getElementById('month').textContent = month;
+        document.getElementById('weekday').textContent = dayOfWeek;
+    </script>
+
+</body>
+</html>
